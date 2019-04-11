@@ -86,13 +86,17 @@
 		
       <!-- Counter Active jQuery -->
        <script>
-        var d = new Date('April 13, 2019 00:00:00');
+        
+		var d = new Date(2019, 3, 13, 19, 30, 0, 00); // 31.12.2011, 02:03:04.567
 		
            //jQuery Counter
         $('#simply-countdown-losange').simplyCountdown({
 			year: d.getFullYear(),
             month: d.getMonth()+1,
             day: d.getDate(),
+			hours: d.getHours(), // Default is 0 [0-23] integer
+            minutes: d.getMinutes(), // Default is 0 [0-59] integer
+            seconds: d.getSeconds(), // Default is 0 [0-59] integer
             enableUtc: false
             /* Options here */
         });
