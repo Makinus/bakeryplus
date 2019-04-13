@@ -87,7 +87,7 @@
       <!-- Counter Active jQuery -->
        <script>
         
-		var d = new Date(2019, 3, 13, 19, 30, 0, 00); // 31.12.2011, 02:03:04.567
+		var d = new Date('April 13, 2019 19:30:00 GMT+00:00');
 		
            //jQuery Counter
         $('#simply-countdown-losange').simplyCountdown({
@@ -97,7 +97,7 @@
 			hours: d.getHours(), // Default is 0 [0-23] integer
             minutes: d.getMinutes(), // Default is 0 [0-59] integer
             seconds: d.getSeconds(), // Default is 0 [0-59] integer
-            enableUtc: false
+            enableUtc: true
             /* Options here */
         });
     </script>
